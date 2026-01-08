@@ -1,1 +1,2 @@
-# loja
+# Loja 🪙
+Site da lojinha
