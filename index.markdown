@@ -1,0 +1,74 @@
+---
+layout: default
+title: Lojinha 🪙
+---
+
+<div class="app">
+
+  <div class="topo">
+    <button class="menu-btn" onclick="toggleMenu()">⋮</button>
+
+  <div class="menu" id="menu">
+    <button onclick="abrirHistorico()">HISTÓRICO DE COMPRAS</button>
+    <div class="estrelas">
+      ⭐ estrelas: <span id="estrelas">0</span>
+    </div>
+    <button onclick="addEstrela()">➕ Adicionar estrela</button>
+  </div>
+</div>
+
+  <h1>LOJINHA🏪</h1>
+
+  <div class="saldo">
+    🪙Moedas: <span id="saldo">0</span>
+  <br>
+  <button class="botao-saldo" onclick="addMoedas()">Adicionar 🪙1 moeda</button>
+  <button class="botao-saldo" onclick="removerMoeda()">➖ Remover 1 moeda</button>
+</div>
+
+  <div class="loja">
+    <div class="item">
+      <h3>Massagem</h3>
+      <p>2 moedas</p>
+      <button onclick="comprar(2, 'Massagem')">Comprar</button>
+    </div>
+
+    <div class="item">
+      <h3>Ver coisa</h3>
+      <p>2 moedas</p>
+      <button onclick="comprar(2, 'Ver coisa')">Comprar</button>
+    </div>
+
+    <div class="item">
+      <h3>Cuca Legal</h3>
+      <p>3 moedas</p>
+      <button onclick="comprar(3, 'Cuca Legal')">Comprar</button>
+    </div>
+
+    <div class="item">
+      <h3>Brigadeiro</h3>
+      <p>4 moedas</p>
+      <button onclick="comprar(4, 'Brigadeiro')">Comprar</button>
+    </div>
+
+    <div class="item">
+      <h3>Bolo</h3>
+      <p>6 moedas</p>
+      <button onclick="comprar(6, 'Bolo')">Comprar</button>
+    </div>
+
+    <div class="item">
+      <h3>Desenho</h3>
+      <p>10 moedas</p>
+      <button onclick="comprar(10, 'Desenho')">Comprar</button>
+    </div>
+  </div>
+
+  <div class="painel" id="painelHistorico">
+    <div class="painel-content">
+      <h2>📜 Histórico de Compras</h2>
+      <ul id="listaHistorico"></ul>
+      <button onclick="limparHistorico()">Limpar histórico</button>
+      <button onclick="fecharHistorico()">Fechar</button>
+    </div>
+  </div>
